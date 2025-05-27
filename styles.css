@@ -1,0 +1,151 @@
+/* GitHub-inspired theme */
+body.github-theme {
+    background: #f6f8fa;
+    font-family: 'Segoe UI', 'Liberation Sans', Arial, sans-serif;
+    color: #24292f;
+    margin: 0;
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 540px;
+    margin: 40px auto;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 24px rgba(27,31,35,0.08);
+    padding: 32px 28px 24px 28px;
+    border: 1px solid #d0d7de;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 18px;
+}
+
+.header-content h1 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin: 0;
+}
+
+.question-count {
+    color: #57606a;
+    font-size: 0.95rem;
+    margin-bottom: 18px;
+}
+
+.form-group {
+    margin-bottom: 28px;
+}
+
+.form-group h2 {
+    font-size: 1.08rem;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.rating-group {
+    display: flex;
+    gap: 18px;
+    margin-top: 6px;
+}
+
+.rating-option {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+}
+
+.rating-value {
+    margin-top: 4px;
+    font-size: 1.1rem;
+    color: #57606a;
+}
+
+input[type="radio"] {
+    accent-color: #2da44e;
+    width: 20px;
+    height: 20px;
+}
+
+.feedback-input {
+    width: 100%;
+    border: 1px solid #d0d7de;
+    border-radius: 6px;
+    padding: 10px;
+    font-size: 1rem;
+    resize: vertical;
+    min-height: 60px;
+    background: #f6f8fa;
+    margin-bottom: 6px;
+}
+
+.character-count {
+    font-size: 0.85rem;
+    color: #8c959f;
+    text-align: right;
+}
+
+.submit-btn {
+    background: #2da44e;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    padding: 12px 0;
+    width: 100%;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s;
+    margin-top: 8px;
+}
+.submit-btn:hover {
+    background: #218838;
+}
+
+.thank-you {
+    text-align: center;
+    padding: 40px 0 20px 0;
+}
+
+.checkmark {
+    width: 56px;
+    height: 56px;
+    display: block;
+    margin: 0 auto 18px auto;
+}
+.checkmark-circle {
+    stroke: #2da44e;
+    stroke-width: 3;
+    stroke-dasharray: 166;
+    stroke-dashoffset: 166;
+    animation: stroke 0.6s cubic-bezier(0.65, 0, 0.45, 1) forwards;
+}
+.checkmark-check {
+    stroke: #2da44e;
+    stroke-width: 3;
+    stroke-linecap: round;
+    stroke-dasharray: 48;
+    stroke-dashoffset: 48;
+    animation: stroke 0.4s 0.6s cubic-bezier(0.65, 0, 0.45, 1) forwards;
+}
+@keyframes stroke {
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+
+@media (max-width: 600px) {
+    .container {
+        padding: 16px 4vw 12px 4vw;
+    }
+    .header-content h1 {
+        font-size: 1.1rem;
+    }
+    .form-group h2 {
+        font-size: 1rem;
+    }
+}
